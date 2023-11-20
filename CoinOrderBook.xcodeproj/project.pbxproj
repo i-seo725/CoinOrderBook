@@ -11,6 +11,8 @@
 		F4C443F12B0AFFFC00ACB8E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C443F02B0AFFFC00ACB8E7 /* ContentView.swift */; };
 		F4C443F32B0AFFFE00ACB8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C443F22B0AFFFE00ACB8E7 /* Assets.xcassets */; };
 		F4C443F62B0AFFFE00ACB8E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C443F52B0AFFFE00ACB8E7 /* Preview Assets.xcassets */; };
+		F4C443FE2B0B092400ACB8E7 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C443FC2B0B092400ACB8E7 /* Banner.swift */; };
+		F4C443FF2B0B092400ACB8E7 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C443FD2B0B092400ACB8E7 /* Money.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		F4C443F02B0AFFFC00ACB8E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4C443F22B0AFFFE00ACB8E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C443F52B0AFFFE00ACB8E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4C443FC2B0B092400ACB8E7 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		F4C443FD2B0B092400ACB8E7 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				F4C443EE2B0AFFFC00ACB8E7 /* CoinOrderBookApp.swift */,
 				F4C443F02B0AFFFC00ACB8E7 /* ContentView.swift */,
+				F4C443FC2B0B092400ACB8E7 /* Banner.swift */,
+				F4C443FD2B0B092400ACB8E7 /* Money.swift */,
 				F4C443F22B0AFFFE00ACB8E7 /* Assets.xcassets */,
 				F4C443F42B0AFFFE00ACB8E7 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				F4C443F12B0AFFFC00ACB8E7 /* ContentView.swift in Sources */,
 				F4C443EF2B0AFFFC00ACB8E7 /* CoinOrderBookApp.swift in Sources */,
+				F4C443FF2B0B092400ACB8E7 /* Money.swift in Sources */,
+				F4C443FE2B0B092400ACB8E7 /* Banner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
