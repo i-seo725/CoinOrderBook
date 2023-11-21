@@ -43,4 +43,4 @@ var dummy = [
     Money(amount: 13900, product: "스플렌더", category: .hobby),
     Money(amount: 1500, product: "컴포즈커피", category: .food),
     Money(amount: 7800, product: "컴포즈커피", category: .food),
-].shuffled()
+]
