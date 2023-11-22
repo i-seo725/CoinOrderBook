@@ -19,6 +19,9 @@
 		F4C444112B0C733600ACB8E7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C444102B0C733600ACB8E7 /* ListView.swift */; };
 		F4C444132B0C735300ACB8E7 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C444122B0C735300ACB8E7 /* ListViewModel.swift */; };
 		F4C444152B0C809A00ACB8E7 /* BannerTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C444142B0C809A00ACB8E7 /* BannerTestView.swift */; };
+		F4C444182B0D85E000ACB8E7 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C444172B0D85E000ACB8E7 /* WalletView.swift */; };
+		F4C4441A2B0D991F00ACB8E7 /* WalletDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C444192B0D991F00ACB8E7 /* WalletDetailView.swift */; };
+		F4C4441C2B0DA52C00ACB8E7 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4441B2B0DA52C00ACB8E7 /* WalletModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		F4C444102B0C733600ACB8E7 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		F4C444122B0C735300ACB8E7 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		F4C444142B0C809A00ACB8E7 /* BannerTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTestView.swift; sourceTree = "<group>"; };
+		F4C444172B0D85E000ACB8E7 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		F4C444192B0D991F00ACB8E7 /* WalletDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDetailView.swift; sourceTree = "<group>"; };
+		F4C4441B2B0DA52C00ACB8E7 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 		F4C443ED2B0AFFFC00ACB8E7 /* CoinOrderBook */ = {
 			isa = PBXGroup;
 			children = (
+				F4C444162B0D85BF00ACB8E7 /* Animation */,
 				F4C4440B2B0C4E5500ACB8E7 /* Network */,
 				F4C444002B0C436A00ACB8E7 /* Model */,
 				F4C443EE2B0AFFFC00ACB8E7 /* CoinOrderBookApp.swift */,
@@ -105,6 +112,16 @@
 				F4C4440C2B0C4E6900ACB8E7 /* UpbitAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F4C444162B0D85BF00ACB8E7 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F4C444172B0D85E000ACB8E7 /* WalletView.swift */,
+				F4C444192B0D991F00ACB8E7 /* WalletDetailView.swift */,
+				F4C4441B2B0DA52C00ACB8E7 /* WalletModel.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,11 +196,14 @@
 			files = (
 				F4C444112B0C733600ACB8E7 /* ListView.swift in Sources */,
 				F4C443F12B0AFFFC00ACB8E7 /* ContentView.swift in Sources */,
+				F4C444182B0D85E000ACB8E7 /* WalletView.swift in Sources */,
 				F4C4440D2B0C4E6900ACB8E7 /* UpbitAPI.swift in Sources */,
 				F4C443EF2B0AFFFC00ACB8E7 /* CoinOrderBookApp.swift in Sources */,
 				F4C4440F2B0C596300ACB8E7 /* ContentViewModel.swift in Sources */,
 				F4C444132B0C735300ACB8E7 /* ListViewModel.swift in Sources */,
 				F4C444082B0C43BB00ACB8E7 /* Money.swift in Sources */,
+				F4C4441C2B0DA52C00ACB8E7 /* WalletModel.swift in Sources */,
+				F4C4441A2B0D991F00ACB8E7 /* WalletDetailView.swift in Sources */,
 				F4C444072B0C43BB00ACB8E7 /* Banner.swift in Sources */,
 				F4C444152B0C809A00ACB8E7 /* BannerTestView.swift in Sources */,
 				F4C4440A2B0C4A1B00ACB8E7 /* OverlayView.swift in Sources */,
