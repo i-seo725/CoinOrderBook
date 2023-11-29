@@ -20,24 +20,30 @@ struct ListView: View {
                 viewModel.fetchAllMarket()
             }
             ForEach(viewModel.market, id: \.self) { item in //hashable 때문에 데이터 하나만 뜸
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(item.korean)
-                            .fontWeight(.bold)
-                        Text(item.english)
-                            .font(.caption)
-                            .foregroundStyle(.gray)
+                NavigationLink(value: item) { //HStack을 선택했을 때 화면전환 되어야 함, 값 전달할 데이터 넣어주기
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.korean)
+                                .fontWeight(.bold)
+                            Text(item.english)
+                                .font(.caption)
+                                .foregroundStyle(.gray)
+                        }
+                        Spacer()
+                        Text(item.market)
                     }
-                    Spacer()
-                    Text(item.market)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 4)
                 }
-                .padding(.horizontal, 20)
-                .padding(.vertical, 4)
             }
         }
         .onAppear {
             print("=========================나타남")
 //            viewModel.fetchAllMarket()
+        }
+        .navigationDestination(for: Market.self) { item in
+            let viewModel = HorizontalViewModel(market: item)
+            HorizontalView(viewModel: viewModel)
         }
     }
 }

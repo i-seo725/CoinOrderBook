@@ -9,26 +9,29 @@ import SwiftUI
 
 struct HorizontalView: View {
     
-    @StateObject var viewModel = HorizontalViewModel()
+    @StateObject var viewModel = HorizontalViewModel(market: Market(market: "krw-btc", korean: "비트코인", english: "Bitcoin"))
     
     var body: some View {
         ScrollView {
-            Text("\(viewModel.value)")
+            Text(viewModel.market.korean)
             GeometryReader { proxy in
                 
-                let graphWidth = proxy.size.width
+                let graphWidth = proxy.size.width * 0.7 //차트 최대 너비
                 
                 VStack {
-                    ForEach(horizontalDummy, id: \.id) { item in
+                    ForEach(viewModel.askOrderBook, id: \.id) { item in
                         HStack {
-                            Text(item.data)
-                                .frame(width: graphWidth * 0.2)
-                            ZStack() {
+                            Text(item.price.formatted())
+                                .frame(width: proxy.size.width * 0.25)
+                            ZStack(alignment: .leading) {
+                                
+                                let graphSize = item.size / viewModel.largestAskSize() * graphWidth
+                                
                                 Rectangle()
                                     .foregroundStyle(.yellow.opacity(0.5))
-                                    .frame(width: CGFloat(item.point) / 10)
-                                    .frame(maxWidth: graphWidth * 0.7)
-                                Text(item.point.formatted())
+                                    .frame(maxWidth: graphSize, alignment: .leading)
+                                Text(item.size.formatted())
+                                    .frame(width: graphWidth)
                             }
                             .frame(maxWidth: .infinity)
                             .background(.orange.opacity(0.3))
@@ -36,13 +39,12 @@ struct HorizontalView: View {
                         .frame(height: 40)
                     }
                 }
-                .background(.gray)
-                .onTapGesture {
-                    print(proxy)
-                    print(proxy.size)
-                    viewModel.timer()
-                }
+                .background(.blue.opacity(0.4))
             }
+        }
+        .onAppear {
+//            viewModel.timer()
+            viewModel.fetchOrderBook()
         }
     }
 }

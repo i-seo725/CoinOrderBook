@@ -28,6 +28,7 @@
 		F4C444182B0D85E000ACB8E7 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C444172B0D85E000ACB8E7 /* WalletView.swift */; };
 		F4C4441A2B0D991F00ACB8E7 /* WalletDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C444192B0D991F00ACB8E7 /* WalletDetailView.swift */; };
 		F4C4441C2B0DA52C00ACB8E7 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4441B2B0DA52C00ACB8E7 /* WalletModel.swift */; };
+		F4F921912B157F40007021BC /* OrderBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F921902B157F40007021BC /* OrderBookModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		F4C444172B0D85E000ACB8E7 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		F4C444192B0D991F00ACB8E7 /* WalletDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDetailView.swift; sourceTree = "<group>"; };
 		F4C4441B2B0DA52C00ACB8E7 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
+		F4F921902B157F40007021BC /* OrderBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				F45400CE2B14327100851580 /* HorizontalView.swift */,
 				F45400D02B14357100851580 /* HorizontalData.swift */,
 				F45400D22B143C6300851580 /* HorizontalViewModel.swift */,
+				F4F921902B157F40007021BC /* OrderBookModel.swift */,
 			);
 			path = Horizontal;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				F4C444152B0C809A00ACB8E7 /* BannerTestView.swift in Sources */,
 				F45400D32B143C6300851580 /* HorizontalViewModel.swift in Sources */,
 				F4C4440A2B0C4A1B00ACB8E7 /* OverlayView.swift in Sources */,
+				F4F921912B157F40007021BC /* OrderBookModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
