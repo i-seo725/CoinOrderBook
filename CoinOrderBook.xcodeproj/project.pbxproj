@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F452B38E2B18300B005CDECA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F921A62B16D226007021BC /* WidgetKit.framework */; };
+		F452B38F2B18300B005CDECA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F921A82B16D226007021BC /* SwiftUI.framework */; };
+		F452B3922B18300B005CDECA /* EunseoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452B3912B18300B005CDECA /* EunseoWidgetBundle.swift */; };
+		F452B3942B18300B005CDECA /* EunseoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452B3932B18300B005CDECA /* EunseoWidget.swift */; };
+		F452B3962B18300C005CDECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F452B3952B18300C005CDECA /* Assets.xcassets */; };
+		F452B39A2B18300C005CDECA /* EunseoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F452B38D2B18300B005CDECA /* EunseoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F452B39F2B183229005CDECA /* WidgetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452B39E2B183229005CDECA /* WidgetTabView.swift */; };
 		F45400C82B141D8E00851580 /* SeSACView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45400C72B141D8E00851580 /* SeSACView.swift */; };
 		F45400CA2B141E5B00851580 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45400C92B141E5B00851580 /* MyWebView.swift */; };
 		F45400CC2B14219100851580 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45400CB2B14219100851580 /* MyTextField.swift */; };
@@ -43,6 +50,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F452B3982B18300C005CDECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4C443E32B0AFFFC00ACB8E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F452B38C2B18300B005CDECA;
+			remoteInfo = EunseoWidgetExtension;
+		};
 		F4F921CA2B16D2EF007021BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4C443E32B0AFFFC00ACB8E7 /* Project object */;
@@ -60,6 +74,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				F4F921CC2B16D2EF007021BC /* MyOrderBookExtension.appex in Embed Foundation Extensions */,
+				F452B39A2B18300C005CDECA /* EunseoWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +82,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F452B38D2B18300B005CDECA /* EunseoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EunseoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F452B3912B18300B005CDECA /* EunseoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EunseoWidgetBundle.swift; sourceTree = "<group>"; };
+		F452B3932B18300B005CDECA /* EunseoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EunseoWidget.swift; sourceTree = "<group>"; };
+		F452B3952B18300C005CDECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F452B3972B18300C005CDECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F452B39E2B183229005CDECA /* WidgetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTabView.swift; sourceTree = "<group>"; };
 		F45400C72B141D8E00851580 /* SeSACView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACView.swift; sourceTree = "<group>"; };
 		F45400C92B141E5B00851580 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
 		F45400CB2B14219100851580 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
@@ -92,11 +113,6 @@
 		F4F921902B157F40007021BC /* OrderBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookModel.swift; sourceTree = "<group>"; };
 		F4F921A62B16D226007021BC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F4F921A82B16D226007021BC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		F4F921AB2B16D226007021BC /* MyOrderBookBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderBookBundle.swift; sourceTree = "<group>"; };
-		F4F921AD2B16D226007021BC /* MyOrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderBook.swift; sourceTree = "<group>"; };
-		F4F921AF2B16D226007021BC /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
-		F4F921B12B16D227007021BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F4F921B32B16D227007021BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F921BF2B16D2EE007021BC /* MyOrderBookExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyOrderBookExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F921C32B16D2EE007021BC /* MyOrderBookBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderBookBundle.swift; sourceTree = "<group>"; };
 		F4F921C52B16D2EE007021BC /* MyOrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderBook.swift; sourceTree = "<group>"; };
@@ -105,11 +121,19 @@
 		F4F921D22B18194E007021BC /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		F4F921D62B181A3E007021BC /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
 		F4F921D82B181A83007021BC /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
-		F4F921DC2B181FCA007021BC /* CoinOrderBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoinOrderBook.entitlements; sourceTree = "<group>"; };
 		F4F921DD2B18204B007021BC /* UserDefaultsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F452B38A2B18300B005CDECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F452B38F2B18300B005CDECA /* SwiftUI.framework in Frameworks */,
+				F452B38E2B18300B005CDECA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4C443E82B0AFFFC00ACB8E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,6 +153,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F452B3902B18300B005CDECA /* EunseoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F452B3912B18300B005CDECA /* EunseoWidgetBundle.swift */,
+				F452B3932B18300B005CDECA /* EunseoWidget.swift */,
+				F452B3952B18300C005CDECA /* Assets.xcassets */,
+				F452B3972B18300C005CDECA /* Info.plist */,
+			);
+			path = EunseoWidget;
+			sourceTree = "<group>";
+		};
 		F45400C62B141D5E00851580 /* WithUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				F4C443ED2B0AFFFC00ACB8E7 /* CoinOrderBook */,
-				F4F921AA2B16D226007021BC /* MyOrderBook */,
 				F4F921C22B16D2EE007021BC /* MyOrderBook */,
+				F452B3902B18300B005CDECA /* EunseoWidget */,
 				F4F921A52B16D226007021BC /* Frameworks */,
 				F4C443EC2B0AFFFC00ACB8E7 /* Products */,
 			);
@@ -166,6 +201,7 @@
 			children = (
 				F4C443EB2B0AFFFC00ACB8E7 /* CoinOrderBook.app */,
 				F4F921BF2B16D2EE007021BC /* MyOrderBookExtension.appex */,
+				F452B38D2B18300B005CDECA /* EunseoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,7 +209,6 @@
 		F4C443ED2B0AFFFC00ACB8E7 /* CoinOrderBook */ = {
 			isa = PBXGroup;
 			children = (
-				F4F921DC2B181FCA007021BC /* CoinOrderBook.entitlements */,
 				F45400CD2B14323D00851580 /* Horizontal */,
 				F45400C62B141D5E00851580 /* WithUIKit */,
 				F4C444162B0D85BF00ACB8E7 /* Animation */,
@@ -189,6 +224,7 @@
 				F4C444102B0C733600ACB8E7 /* ListView.swift */,
 				F4C444122B0C735300ACB8E7 /* ListViewModel.swift */,
 				F4F921DD2B18204B007021BC /* UserDefaultsGroup.swift */,
+				F452B39E2B183229005CDECA /* WidgetTabView.swift */,
 			);
 			path = CoinOrderBook;
 			sourceTree = "<group>";
@@ -237,18 +273,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F4F921AA2B16D226007021BC /* MyOrderBook */ = {
-			isa = PBXGroup;
-			children = (
-				F4F921AB2B16D226007021BC /* MyOrderBookBundle.swift */,
-				F4F921AD2B16D226007021BC /* MyOrderBook.swift */,
-				F4F921AF2B16D226007021BC /* AppIntent.swift */,
-				F4F921B12B16D227007021BC /* Assets.xcassets */,
-				F4F921B32B16D227007021BC /* Info.plist */,
-			);
-			path = MyOrderBook;
-			sourceTree = "<group>";
-		};
 		F4F921C22B16D2EE007021BC /* MyOrderBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +306,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F452B38C2B18300B005CDECA /* EunseoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F452B39D2B18300C005CDECA /* Build configuration list for PBXNativeTarget "EunseoWidgetExtension" */;
+			buildPhases = (
+				F452B3892B18300B005CDECA /* Sources */,
+				F452B38A2B18300B005CDECA /* Frameworks */,
+				F452B38B2B18300B005CDECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EunseoWidgetExtension;
+			productName = EunseoWidgetExtension;
+			productReference = F452B38D2B18300B005CDECA /* EunseoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F4C443EA2B0AFFFC00ACB8E7 /* CoinOrderBook */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4C443F92B0AFFFE00ACB8E7 /* Build configuration list for PBXNativeTarget "CoinOrderBook" */;
@@ -295,6 +336,7 @@
 			);
 			dependencies = (
 				F4F921CB2B16D2EF007021BC /* PBXTargetDependency */,
+				F452B3992B18300C005CDECA /* PBXTargetDependency */,
 			);
 			name = CoinOrderBook;
 			productName = CoinOrderBook;
@@ -328,6 +370,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					F452B38C2B18300B005CDECA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					F4C443EA2B0AFFFC00ACB8E7 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -351,11 +396,20 @@
 			targets = (
 				F4C443EA2B0AFFFC00ACB8E7 /* CoinOrderBook */,
 				F4F921BE2B16D2EE007021BC /* MyOrderBookExtension */,
+				F452B38C2B18300B005CDECA /* EunseoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F452B38B2B18300B005CDECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F452B3962B18300C005CDECA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4C443E92B0AFFFC00ACB8E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +430,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F452B3892B18300B005CDECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F452B3942B18300B005CDECA /* EunseoWidget.swift in Sources */,
+				F452B3922B18300B005CDECA /* EunseoWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4C443E72B0AFFFC00ACB8E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +463,7 @@
 				F4C444152B0C809A00ACB8E7 /* BannerTestView.swift in Sources */,
 				F45400D32B143C6300851580 /* HorizontalViewModel.swift in Sources */,
 				F4C4440A2B0C4A1B00ACB8E7 /* OverlayView.swift in Sources */,
+				F452B39F2B183229005CDECA /* WidgetTabView.swift in Sources */,
 				F4F921912B157F40007021BC /* OrderBookModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +484,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F452B3992B18300C005CDECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F452B38C2B18300B005CDECA /* EunseoWidgetExtension */;
+			targetProxy = F452B3982B18300C005CDECA /* PBXContainerItemProxy */;
+		};
 		F4F921CB2B16D2EF007021BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F4F921BE2B16D2EE007021BC /* MyOrderBookExtension */;
@@ -428,6 +497,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F452B39B2B18300C005CDECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N54L2GS5Z3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EunseoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EunseoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunseo.CoinOrderBook.EunseoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F452B39C2B18300C005CDECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N54L2GS5Z3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EunseoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EunseoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunseo.CoinOrderBook.EunseoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F4C443F72B0AFFFE00ACB8E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -668,6 +791,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F452B39D2B18300C005CDECA /* Build configuration list for PBXNativeTarget "EunseoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F452B39B2B18300C005CDECA /* Debug */,
+				F452B39C2B18300C005CDECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F4C443E62B0AFFFC00ACB8E7 /* Build configuration list for PBXProject "CoinOrderBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -24,7 +24,7 @@ struct MyOrderBook: Widget {
         }
         .configurationDisplayName("My Widget")  //위젯 선택할 때 이름
         .description("This is an example widget.")  //위젯 선택할 때 내용
-        .supportedFamilies([.accessoryCircular, .accessoryInline, .accessoryRectangular])
+//        .supportedFamilies([.systemLarge])
     }
 }
 

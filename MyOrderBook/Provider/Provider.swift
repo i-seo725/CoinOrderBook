@@ -8,20 +8,22 @@
 import WidgetKit
 
 struct Provider: TimelineProvider {
+    typealias Entry = SimpleEntry
+    
     //실제 값을 가져오기까지 시간이 걸릴 때 보임
     //위젯킷이 최초로 렌더링할 때 사용, 렌더링 되기까지는 스켈레톤 뷰가 나옴
-    func placeholder(in context: Context) -> SimpleEntry {
+    func placeholder(in context: Context) -> Entry {
         SimpleEntry(date: Date(), test: "test", token: "토큰", price: 1000)
     }
 
     //위젯 선택하는 미리보기 화면에서 보여지는 내용
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+    func getSnapshot(in context: Context, completion: @escaping (Entry) -> ()) {
         let entry = SimpleEntry(date: Date(), test: "은서", token: "bitcoin", price: 50000)
         completion(entry)
     }
 
     //위젯 상태 변경 시점(시간 마다, 몇 분마다 위젯 업데이트)
-    func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.

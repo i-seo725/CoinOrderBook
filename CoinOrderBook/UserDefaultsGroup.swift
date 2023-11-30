@@ -10,7 +10,7 @@ import Foundation
 extension UserDefaults {
     
     static var groupShared: UserDefaults {
-        let appGroupID = "group.eunseo.MyWallet"
+        let appGroupID = "group.eunseo.Wallet"
         return UserDefaults(suiteName: appGroupID)!
     }
     

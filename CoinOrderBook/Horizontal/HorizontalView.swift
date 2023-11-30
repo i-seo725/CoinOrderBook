@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct HorizontalView: View {
     
@@ -47,6 +48,7 @@ struct HorizontalView: View {
             viewModel.fetchOrderBook()
             //UserDefaults AppGroup
             UserDefaults.groupShared.set(viewModel.market.korean, forKey: "Market")
+            WidgetCenter.shared.reloadTimelines(ofKind: "MyOrderBook")
         }
     }
 }
