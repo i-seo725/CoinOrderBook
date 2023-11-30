@@ -45,6 +45,8 @@ struct HorizontalView: View {
         .onAppear {
 //            viewModel.timer()
             viewModel.fetchOrderBook()
+            //UserDefaults AppGroup
+            UserDefaults.groupShared.set(viewModel.market.korean, forKey: "Market")
         }
     }
 }

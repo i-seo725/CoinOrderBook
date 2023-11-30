@@ -35,6 +35,11 @@
 		F4F921C62B16D2EE007021BC /* MyOrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F921C52B16D2EE007021BC /* MyOrderBook.swift */; };
 		F4F921C82B16D2EF007021BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F921C72B16D2EF007021BC /* Assets.xcassets */; };
 		F4F921CC2B16D2EF007021BC /* MyOrderBookExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F4F921BF2B16D2EE007021BC /* MyOrderBookExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F4F921D42B1819B2007021BC /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F921D22B18194E007021BC /* Provider.swift */; };
+		F4F921D72B181A3E007021BC /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F921D62B181A3E007021BC /* SimpleEntry.swift */; };
+		F4F921D92B181A83007021BC /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F921D82B181A83007021BC /* EntryView.swift */; };
+		F4F921DE2B18204B007021BC /* UserDefaultsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F921DD2B18204B007021BC /* UserDefaultsGroup.swift */; };
+		F4F921DF2B18204B007021BC /* UserDefaultsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F921DD2B18204B007021BC /* UserDefaultsGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +102,11 @@
 		F4F921C52B16D2EE007021BC /* MyOrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderBook.swift; sourceTree = "<group>"; };
 		F4F921C72B16D2EF007021BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4F921C92B16D2EF007021BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F921D22B18194E007021BC /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		F4F921D62B181A3E007021BC /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
+		F4F921D82B181A83007021BC /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		F4F921DC2B181FCA007021BC /* CoinOrderBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoinOrderBook.entitlements; sourceTree = "<group>"; };
+		F4F921DD2B18204B007021BC /* UserDefaultsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +173,7 @@
 		F4C443ED2B0AFFFC00ACB8E7 /* CoinOrderBook */ = {
 			isa = PBXGroup;
 			children = (
+				F4F921DC2B181FCA007021BC /* CoinOrderBook.entitlements */,
 				F45400CD2B14323D00851580 /* Horizontal */,
 				F45400C62B141D5E00851580 /* WithUIKit */,
 				F4C444162B0D85BF00ACB8E7 /* Animation */,
@@ -177,6 +188,7 @@
 				F4C4440E2B0C596300ACB8E7 /* ContentViewModel.swift */,
 				F4C444102B0C733600ACB8E7 /* ListView.swift */,
 				F4C444122B0C735300ACB8E7 /* ListViewModel.swift */,
+				F4F921DD2B18204B007021BC /* UserDefaultsGroup.swift */,
 			);
 			path = CoinOrderBook;
 			sourceTree = "<group>";
@@ -240,12 +252,31 @@
 		F4F921C22B16D2EE007021BC /* MyOrderBook */ = {
 			isa = PBXGroup;
 			children = (
+				F4F921D52B181A18007021BC /* Entry */,
+				F4F921D02B18190F007021BC /* Provider */,
 				F4F921C32B16D2EE007021BC /* MyOrderBookBundle.swift */,
 				F4F921C52B16D2EE007021BC /* MyOrderBook.swift */,
 				F4F921C72B16D2EF007021BC /* Assets.xcassets */,
 				F4F921C92B16D2EF007021BC /* Info.plist */,
 			);
 			path = MyOrderBook;
+			sourceTree = "<group>";
+		};
+		F4F921D02B18190F007021BC /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F4F921D22B18194E007021BC /* Provider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F4F921D52B181A18007021BC /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				F4F921D62B181A3E007021BC /* SimpleEntry.swift */,
+				F4F921D82B181A83007021BC /* EntryView.swift */,
+			);
+			path = Entry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +390,7 @@
 				F4C444132B0C735300ACB8E7 /* ListViewModel.swift in Sources */,
 				F4C444082B0C43BB00ACB8E7 /* Money.swift in Sources */,
 				F45400D12B14357100851580 /* HorizontalData.swift in Sources */,
+				F4F921DE2B18204B007021BC /* UserDefaultsGroup.swift in Sources */,
 				F45400C82B141D8E00851580 /* SeSACView.swift in Sources */,
 				F4C4441C2B0DA52C00ACB8E7 /* WalletModel.swift in Sources */,
 				F45400CC2B14219100851580 /* MyTextField.swift in Sources */,
@@ -376,7 +408,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F921D72B181A3E007021BC /* SimpleEntry.swift in Sources */,
 				F4F921C42B16D2EE007021BC /* MyOrderBookBundle.swift in Sources */,
+				F4F921D92B181A83007021BC /* EntryView.swift in Sources */,
+				F4F921D42B1819B2007021BC /* Provider.swift in Sources */,
+				F4F921DF2B18204B007021BC /* UserDefaultsGroup.swift in Sources */,
 				F4F921C62B16D2EE007021BC /* MyOrderBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +553,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoinOrderBook/CoinOrderBook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoinOrderBook/Preview Content\"";
@@ -547,6 +584,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoinOrderBook/CoinOrderBook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoinOrderBook/Preview Content\"";
@@ -576,6 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyOrderBookExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N54L2GS5Z3;
@@ -603,6 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyOrderBookExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N54L2GS5Z3;
